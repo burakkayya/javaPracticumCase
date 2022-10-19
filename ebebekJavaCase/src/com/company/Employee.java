@@ -2,10 +2,10 @@ package com.company;
 
 public class Employee {
 
-    String name;
-    double salary;
-    float workHours;
-    String hireYear;
+    private String name;
+    private double salary;
+    private float workHours;
+    private String hireYear;
 
     public Employee(String name, double salary, float workHours, String hireYear) {
         this.name = name;
