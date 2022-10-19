@@ -30,15 +30,15 @@ public class EmployeeManager {
 
         if ((2021 - Integer.parseInt(_employee.hireYear)) < 10) {
 
-            return ((_employee.salary + bonus()) - tax()) * 5 / 100;
+            return _employee.salary * 5 / 100;
 
         } else if ((2021 - Integer.parseInt(_employee.hireYear)) > 9 && (2021 - Integer.parseInt(_employee.hireYear)) < 20) {
 
-            return ((_employee.salary + bonus()) - tax()) * 10 / 100;
+            return _employee.salary * 10 / 100;
 
         } else if ((2021 - Integer.parseInt(_employee.hireYear)) > 19) {
 
-            return ((_employee.salary + bonus()) - tax()) * 15 / 100;
+            return _employee.salary * 15 / 100;
 
         }
         return 0;

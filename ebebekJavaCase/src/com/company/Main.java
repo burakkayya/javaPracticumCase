@@ -27,15 +27,15 @@ public class Main {
 
         employeeManager.employeeToString();
         System.out.println();
-        System.out.println("Bonus : " + employeeManager.bonus() + " TL");
-        System.out.println();
         System.out.println("Vergi : " + employeeManager.tax() + " TL");
         System.out.println();
-        System.out.println("Toplam maaş : " + (employee.getSalary() + employeeManager.bonus()) + " TL");
+        System.out.println("Bonus : " + employeeManager.bonus() + " TL");
+        System.out.println();
+        System.out.println("Maaş artışı : " + employeeManager.raiseSalary() + " TL");
         System.out.println();
         System.out.println("Vergi ve bonuslarla birlikte maaş : " + ((employee.getSalary() + employeeManager.bonus()) - employeeManager.tax()) + " TL");
         System.out.println();
-        System.out.println("Maaş artışı : " + employeeManager.raiseSalary() + " TL");
+        System.out.println("Toplam maaş : " + ((employee.getSalary() + employeeManager.bonus()) - employeeManager.tax() + employeeManager.raiseSalary()) + " TL");
         System.out.println();
     }
 }

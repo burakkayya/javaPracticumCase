@@ -14,6 +14,9 @@ public class Employee {
         this.hireYear = hireYear;
     }
 
+    public Employee() {
+    }
+
     public String getName() {
         return name;
     }
